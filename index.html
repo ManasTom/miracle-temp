@@ -69,20 +69,15 @@
                             <ul
                                 class="navbar-nav mx-auto mb-2 mb-xl-0 gap-xl-4 justify-content-center flex-grow-1 pe-3">
                                 <li class="nav-item">
-                                    <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                                    <a class="nav-link active" aria-current="page" href="#">Home</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" href="about-us.html">About Us</a>
+                                    <a class="nav-link" href="#about_sec">About Us</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" href="#">
+                                    <a class="nav-link" href="#services_sec">
                                         Services
                                     </a>
-                                    <ul class="dropdown-menu">
-                                        <li><a class="dropdown-item" href="services.html">Our Services</a></li>
-                                        <li><a class="dropdown-item" href="service-detail.html">Service Detail</a></li>
-                                        <li><a class="dropdown-item" href="appointment.html">Appointment</a></li>
-                                    </ul>
                                 </li>
 
                                 <li class="nav-item">
@@ -92,7 +87,7 @@
                             <div class="mt-lg-3">
                                 <a href="contact-us.html" class="btn btn-quotes">
                                     <!-- <i class="bi bi-journal-bookmark-fill pe-2"></i> -->
-                                    Connect Us</a>
+                                    Connect with Us</a>
                             </div>
                         </div>
                     </div>
@@ -106,76 +101,245 @@
     <!-- Main Content -->
     <main>
 
-        <!-- Hero Section -->
-        <section class="section hero-section d-flex align-items-center pb-0">
-            <div class="b-container px-3 px-sm-4 px-md-0">
-                <div class="row row-cols-1 row-cols-lg-2 g-4 align-items-center text-white">
-                    <!-- Left Content -->
-                    <div class="col mt-md-5 text-center text-lg-start d-flex flex-column align-items-center align-items-lg-start"
-                        data-aos="fade-up" data-aos-easing="linear" data-aos-delay="500" data-aos-duration="1000">
-                        <h6 class="text-primary-color fw-semibold">FIND BALANCE, EMBRACE LIFE</h6>
-                        <h1 class="display-md-4 lh-sm font-1" style="font-weight: 900;">
-                            Calm Your Mind <span class="text-primary-color">Embrace</span> Life
-                        </h1>
-                        <hr class="border border-white border-2 opacity-75 w-75 my-4 mx-auto mx-lg-0">
-                        <p class="fs-5 my-4">
-                            Discover clarity, confidence, and emotional wellness through guided support that helps you
-                            manage stress, heal from within, and grow stronger in every aspect of your mental health
-                            journey.
-                        </p>
-                        <div
-                            class="d-flex gap-3 align-items-center my-4 flex-nowrap justify-content-lg-start justify-content-center">
-                            <a href="appointment.html" role="button" class="btn btn-primary-solid">Start A Checkup
-                                Now</a>
-                            <button class="btn btn-secondary-solid rounded-circle fs-2 p-2 btn-play" type="button"
-                                style="width: 60px; height: 60px;" onclick="showVideoOverlay()">
-                                <i class="bi bi-play-fill"></i>
-                            </button>
-                        </div>
-                    </div>
-                    <!-- Video Overlay -->
-                    <div id="videoOverlay" class="video-overlay d-none mt-0">
-                        <button type="button"
-                            class="position-absolute top-0 end-0 m-3 text-white fs-2 border-0 bg-transparent"
-                            onclick="hideVideoOverlay()" aria-label="Close">
-                            <i class="bi bi-x-lg"></i>
-                        </button>
-                        <div class="video-box">
-                            <div class="ratio ratio-16x9">
-                                <iframe id="youtubeFrame"
-                                    src="https://www.youtube.com/embed/N3Te3HeEFoA?si=YT6iTnj0qgbxYQ-H"
-                                    title="YouTube video" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+        <section class="hero-slider-container">
+            <div class="hero-slide-item active">
+                <!-- Hero Section -->
+                <section class="section hero-section d-flex align-items-center pb-0">
+                    <div class="b-container px-3 px-sm-4 px-md-0">
+                        <div class="row row-cols-1 row-cols-lg-2 g-4 align-items-center text-white">
+                            <!-- Left Content -->
+                            <div class="col mt-md-5 text-center text-lg-start d-flex flex-column align-items-center align-items-lg-start"
+                                data-aos="fade-up" data-aos-easing="linear" data-aos-delay="500"
+                                data-aos-duration="1000">
+                                <h6 class="text-primary-color fw-semibold">FIND BALANCE, EMBRACE LIFE</h6>
+                                <h1 class="display-md-4 lh-sm font-1" style="font-weight: 900;">
+                                    Calm Your Mind <span class="text-primary-color">Embrace</span> Life
+                                </h1>
+                                <hr class="border border-white border-2 opacity-75 w-75 my-4 mx-auto mx-lg-0">
+                                <p class="fs-5 my-4">
+                                    Discover clarity, confidence, and emotional wellness through guided support that
+                                    helps you
+                                    manage stress, heal from within, and grow stronger in every aspect of your mental
+                                    health
+                                    journey.
+                                </p>
+                                <div
+                                    class="d-flex gap-3 align-items-center my-4 flex-nowrap justify-content-lg-start justify-content-center">
+                                    <a href="appointment.html" role="button" class="btn btn-primary-solid">Start A
+                                        Checkup
+                                        Now</a>
+                                    <button class="btn btn-secondary-solid rounded-circle fs-2 p-2 btn-play"
+                                        type="button" style="width: 60px; height: 60px;" onclick="showVideoOverlay()">
+                                        <i class="bi bi-play-fill"></i>
+                                    </button>
+                                </div>
                             </div>
-                        </div>
-                    </div>
-                    <!-- #video end -->
 
-                    <!-- Right Image -->
-                    <div class="col position-relative text-center pt-lg-4 pt-xl-3">
-                        <img src="image/office-lifestyle-business-and-people-concept-fri-2023-11-27-04-54-20-utc.png"
-                            alt="Hero Talent" class="img-fluid position-relative" style="z-index: 2;">
-                        <!-- Badge Review -->
-                        <div class="badge-cta position-absolute top-50 start-0 translate-middle-y bg-secondary-color py-3 px-4 rounded-5 text-white text-center d-none d-md-block"
-                            style="z-index: 3;">
-                            <h3 class="mb-0 font-1 fw-bolder count-up" data-count="4.9" data-suffix=" /5">0</h3>
-                            <p class="mb-0">Review on Google</p>
-                        </div>
-                        <!-- Badge Phone -->
-                        <div class="badge-cta position-absolute top-0 end-0 bg-primary-color py-3 px-4 rounded-5 d-flex align-items-center gap-3 justify-content-start"
-                            style=" z-index: 1;">
-                            <div class=" d-flex align-items-center justify-content-center rounded-circle bg-white"
-                                style="width: 60px; height: 60px;">
-                                <i class=" bi bi-telephone-fill text-primary-color fs-2"></i>
-                            </div>
-                            <div class="justify-content-start">
-                                <p class="mb-0">Call us anytime</p>
-                                <h3 class="font-1 fw-bolder">(555) 123-4567</h3>
+
+                            <!-- Right Image -->
+                            <div class="col position-relative text-center pt-lg-4 pt-xl-3">
+                                <img src="image/office-lifestyle-business-and-people-concept-fri-2023-11-27-04-54-20-utc.png"
+                                    alt="Hero Talent" class="img-fluid position-relative" style="z-index: 2;">
+                                <!-- Badge Review -->
+                                <div class="badge-cta position-absolute top-50 start-0 translate-middle-y bg-secondary-color py-3 px-4 rounded-5 text-white text-center d-none d-md-block"
+                                    style="z-index: 3;">
+                                    <h3 class="mb-0 font-1 fw-bolder count-up" data-count="4.9" data-suffix=" /5">0</h3>
+                                    <p class="mb-0">Review on Google</p>
+                                </div>
+                                <!-- Badge Phone -->
+                                <div class="badge-cta position-absolute top-0 end-0 bg-primary-color py-3 px-4 rounded-5 d-flex align-items-center gap-3 justify-content-start"
+                                    style=" z-index: 1;">
+                                    <div class=" d-flex align-items-center justify-content-center rounded-circle bg-white"
+                                        style="width: 60px; height: 60px;">
+                                        <i class=" bi bi-telephone-fill text-primary-color fs-2"></i>
+                                    </div>
+                                    <div class="justify-content-start">
+                                        <p class="mb-0">Call us anytime</p>
+                                        <h3 class="font-1 fw-bolder">(555) 123-4567</h3>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
+                </section>
+            </div>
+            <div class="hero-slide-item">
+                <!-- Hero Section -->
+                <section class="section hero-section d-flex align-items-center pb-0">
+                    <div class="b-container px-3 px-sm-4 px-md-0">
+                        <div class="row row-cols-1 row-cols-lg-2 g-4 align-items-center text-white">
+                            <!-- Left Content -->
+                            <div class="col mt-md-5 text-center text-lg-start d-flex flex-column align-items-center align-items-lg-start"
+                                data-aos="fade-up" data-aos-easing="linear" data-aos-delay="500"
+                                data-aos-duration="1000">
+                                <h6 class="text-primary-color fw-semibold">FIND BALANCE, EMBRACE LIFE</h6>
+                                <h1 class="display-md-4 lh-sm font-1" style="font-weight: 900;">
+                                    Calm Your Mind <span class="text-primary-color">Embrace</span> Life
+                                </h1>
+                                <hr class="border border-white border-2 opacity-75 w-75 my-4 mx-auto mx-lg-0">
+                                <p class="fs-5 my-4">
+                                    Discover clarity, confidence, and emotional wellness through guided support that
+                                    helps you
+                                    manage stress, heal from within, and grow stronger in every aspect of your mental
+                                    health
+                                    journey.
+                                </p>
+                                <div
+                                    class="d-flex gap-3 align-items-center my-4 flex-nowrap justify-content-lg-start justify-content-center">
+                                    <a href="appointment.html" role="button" class="btn btn-primary-solid">Start A
+                                        Checkup
+                                        Now</a>
+                                    <button class="btn btn-secondary-solid rounded-circle fs-2 p-2 btn-play"
+                                        type="button" style="width: 60px; height: 60px;" onclick="showVideoOverlay()">
+                                        <i class="bi bi-play-fill"></i>
+                                    </button>
+                                </div>
+                            </div>
+
+
+                            <!-- Right Image -->
+                            <div class="col position-relative text-center pt-lg-4 pt-xl-3">
+                                <img src="image/office-lifestyle-business-and-people-concept-fri-2023-11-27-04-54-20-utc.png"
+                                    alt="Hero Talent" class="img-fluid position-relative" style="z-index: 2;">
+                                <!-- Badge Review -->
+                                <div class="badge-cta position-absolute top-50 start-0 translate-middle-y bg-secondary-color py-3 px-4 rounded-5 text-white text-center d-none d-md-block"
+                                    style="z-index: 3;">
+                                    <h3 class="mb-0 font-1 fw-bolder count-up" data-count="4.9" data-suffix=" /5">0</h3>
+                                    <p class="mb-0">Review on Google</p>
+                                </div>
+                                <!-- Badge Phone -->
+                                <div class="badge-cta position-absolute top-0 end-0 bg-primary-color py-3 px-4 rounded-5 d-flex align-items-center gap-3 justify-content-start"
+                                    style=" z-index: 1;">
+                                    <div class=" d-flex align-items-center justify-content-center rounded-circle bg-white"
+                                        style="width: 60px; height: 60px;">
+                                        <i class=" bi bi-telephone-fill text-primary-color fs-2"></i>
+                                    </div>
+                                    <div class="justify-content-start">
+                                        <p class="mb-0">Call us anytime</p>
+                                        <h3 class="font-1 fw-bolder">(555) 123-4567</h3>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+            <div class="hero-slide-item">
+                <!-- Hero Section -->
+                <section class="section hero-section d-flex align-items-center pb-0">
+                    <div class="b-container px-3 px-sm-4 px-md-0">
+                        <div class="row row-cols-1 row-cols-lg-2 g-4 align-items-center text-white">
+                            <!-- Left Content -->
+                            <div class="col mt-md-5 text-center text-lg-start d-flex flex-column align-items-center align-items-lg-start"
+                                data-aos="fade-up" data-aos-easing="linear" data-aos-delay="500"
+                                data-aos-duration="1000">
+                                <h6 class="text-primary-color fw-semibold">FIND BALANCE, EMBRACE LIFE</h6>
+                                <h1 class="display-md-4 lh-sm font-1" style="font-weight: 900;">
+                                    Calm Your Mind <span class="text-primary-color">Embrace</span> Life
+                                </h1>
+                                <hr class="border border-white border-2 opacity-75 w-75 my-4 mx-auto mx-lg-0">
+                                <p class="fs-5 my-4">
+                                    Discover clarity, confidence, and emotional wellness through guided support that
+                                    helps you
+                                    manage stress, heal from within, and grow stronger in every aspect of your mental
+                                    health
+                                    journey.
+                                </p>
+                                <div
+                                    class="d-flex gap-3 align-items-center my-4 flex-nowrap justify-content-lg-start justify-content-center">
+                                    <a href="appointment.html" role="button" class="btn btn-primary-solid">Start A
+                                        Checkup
+                                        Now</a>
+                                    <button class="btn btn-secondary-solid rounded-circle fs-2 p-2 btn-play"
+                                        type="button" style="width: 60px; height: 60px;" onclick="showVideoOverlay()">
+                                        <i class="bi bi-play-fill"></i>
+                                    </button>
+                                </div>
+                            </div>
+
+
+                            <!-- Right Image -->
+                            <div class="col position-relative text-center pt-lg-4 pt-xl-3">
+                                <img src="image/office-lifestyle-business-and-people-concept-fri-2023-11-27-04-54-20-utc.png"
+                                    alt="Hero Talent" class="img-fluid position-relative" style="z-index: 2;">
+                                <!-- Badge Review -->
+                                <div class="badge-cta position-absolute top-50 start-0 translate-middle-y bg-secondary-color py-3 px-4 rounded-5 text-white text-center d-none d-md-block"
+                                    style="z-index: 3;">
+                                    <h3 class="mb-0 font-1 fw-bolder count-up" data-count="4.9" data-suffix=" /5">0</h3>
+                                    <p class="mb-0">Review on Google</p>
+                                </div>
+                                <!-- Badge Phone -->
+                                <div class="badge-cta position-absolute top-0 end-0 bg-primary-color py-3 px-4 rounded-5 d-flex align-items-center gap-3 justify-content-start"
+                                    style=" z-index: 1;">
+                                    <div class=" d-flex align-items-center justify-content-center rounded-circle bg-white"
+                                        style="width: 60px; height: 60px;">
+                                        <i class=" bi bi-telephone-fill text-primary-color fs-2"></i>
+                                    </div>
+                                    <div class="justify-content-start">
+                                        <p class="mb-0">Call us anytime</p>
+                                        <h3 class="font-1 fw-bolder">(555) 123-4567</h3>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
             </div>
         </section>
+
+<style>
+.hero-slider-container {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    transition: height 0.5s ease; /* smooth height resize */
+}
+
+.hero-slide-item {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+    pointer-events: none; /* avoid clicks on hidden slides */
+}
+
+.hero-slide-item.active {
+    opacity: 1;
+    position: relative;   /* take space for height measurement */
+    pointer-events: auto;
+}
+</style>
+
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+    const container = document.querySelector(".hero-slider-container");
+    const slides = document.querySelectorAll(".hero-slide-item");
+    let current = 0;
+
+    function showSlide(index) {
+        slides.forEach((slide, i) => {
+            slide.classList.remove("active");
+            slide.style.position = "absolute"; // keep others stacked
+        });
+        slides[index].classList.add("active");
+        slides[index].style.position = "relative"; // let active one decide height
+
+        // adjust container height to match active slide
+        container.style.height = slides[index].scrollHeight + "px";
+    }
+
+    // Init
+    showSlide(current);
+
+    setInterval(() => {
+        current = (current + 1) % slides.length;
+        showSlide(current);
+    }, 3000);
+});
+</script>
+
         <!-- #hero end -->
 
         <!-- Features Section -->
@@ -187,7 +351,7 @@
                         data-aos-duration="1000">
                         <div class="bg-secondary-color text-white p-4 rounded-5 h-100 transition-hover">
                             <div class="d-flex align-items-center gap-3 mb-3 justify-content-start">
-                                <div class="d-flex align-items-center justify-content-center bg-secondary-color-2 rounded-circle"
+                                <div class="d-flex align-items-center justify-content-center baby-pink-bg rounded-circle"
                                     style="width: 50px; height: 50px;">
                                     <i class="bi bi-journal-text fs-4"></i>
                                 </div>
@@ -203,7 +367,7 @@
                         data-aos-duration="1000">
                         <div class="bg-secondary-color-2 text-white p-4 rounded-5 h-100 transition-hover">
                             <div class="d-flex align-items-center gap-3 mb-3 justify-content-start">
-                                <div class="d-flex align-items-center justify-content-center bg-secondary-color rounded-circle"
+                                <div class="d-flex align-items-center justify-content-center dark-purple-bg rounded-circle"
                                     style="width: 50px; height: 50px;">
                                     <i class="bi bi-people-fill fs-4"></i>
                                 </div>
@@ -220,7 +384,7 @@
                         data-aos-duration="1000">
                         <div class="bg-primary-color text-white p-4 rounded-5 h-100 transition-hover">
                             <div class="d-flex align-items-center gap-3 mb-3 justify-content-start">
-                                <div class="d-flex align-items-center justify-content-center bg-primary-color-2 rounded-circle"
+                                <div class="d-flex align-items-center justify-content-center dark-blue-bg rounded-circle"
                                     style="width: 50px; height: 50px;">
                                     <i class="bi bi-headset fs-4"></i>
                                 </div>
@@ -341,7 +505,7 @@
         <!-- #about end -->
 
         <!-- Consult Section -->
-        <section class="section py-5 text-white bg-gradient-secondary my-5">
+        <section class="section py-5 text-white bg-gradient-new-45 my-5">
             <div class="b-container">
                 <div class="row justify-content-center text-center text-xl-start my-5">
                     <div class="col-12 col-xl-7">
@@ -537,7 +701,7 @@
         <!-- #services end -->
 
         <!-- Appointment Section -->
-        <section class="section py-5 text-white bg-gradient-secondary my-5">
+        <section class="section py-5 text-white  bg-gradient-new-45 my-5">
             <div class="b-container">
                 <div class="row align-items-center g-4 pt-5">
                     <!-- Left content -->
@@ -582,7 +746,7 @@
                         <div class="card bg-gradient-primary rounded-4 border-0" data-aos="fade-left"
                             data-aos-easing="linear" data-aos-delay="500" data-aos-duration="1000">
                             <div class="card-body text-center text-white p-3 font-1">
-                                <div class="display-5"><i class="bi bi-emoji-smile-fill accent-secondary-color"></i>
+                                <div class="display-5"><i class="bi bi-emoji-smile-fill baby-pink"></i>
                                 </div>
                                 <div class="mb-0 fs-2 fw-bold">100%</div>
                                 <p class="mb-0">Satisfaction</p>
@@ -591,7 +755,7 @@
                         <div class="card bg-gradient-primary rounded-4 border-0" data-aos="fade-left"
                             data-aos-easing="linear" data-aos-delay="750" data-aos-duration="1000">
                             <div class="card-body text-center text-white p-3 font-1">
-                                <div class="display-5"><i class="bi bi-hand-thumbs-up-fill accent-secondary-color"></i>
+                                <div class="display-5"><i class="bi bi-hand-thumbs-up-fill baby-pink"></i>
                                 </div>
                                 <div class="mb-0 fs-2 fw-bold">257+</div>
                                 <p class="mb-0">Happy Patient</p>
@@ -600,7 +764,7 @@
                         <div class="card bg-gradient-primary rounded-4 border-0" data-aos="fade-left"
                             data-aos-easing="linear" data-aos-delay="1000" data-aos-duration="1000">
                             <div class="card-body text-center text-white p-3 font-1">
-                                <div class="display-5"><i class="bi bi-person-plus-fill accent-secondary-color"></i>
+                                <div class="display-5"><i class="bi bi-person-plus-fill baby-pink"></i>
                                 </div>
                                 <div class="mb-0 fs-2 fw-bold">10+</div>
                                 <p class="mb-0">Expert Therapist</p>
@@ -614,7 +778,7 @@
 
         <!-- Feedback Section -->
         <section class="section py-5 mt-5"
-            style="background: linear-gradient(to bottom,white 0%,white 60%,#F8DAE0 60%,#F7D9DF 100%)">
+            style="background: linear-gradient(to bottom,white 0%,white 60%,#addec6 60%,#46b07d 100%)">
             <div class="b-container">
                 <div class="row justify-content-between">
                     <div class="col-12 col-lg-7 text-center text-lg-start">
@@ -1052,7 +1216,7 @@
         <!-- #quotes end -->
 
         <!-- News Section -->
-        <section class="section py-5 mb-5">
+        <!-- <section class="section py-5 mb-5">
             <div class="b-container">
                 <div class="row d-flex justify-content-lg-between justify-content-center text-center text-lg-start">
                     <div class="col-12 col-lg-6">
@@ -1149,7 +1313,7 @@
                     </div>
                 </div>
             </div>
-        </section>
+        </section> -->
         <!-- #news end -->
 
     </main>
@@ -1194,12 +1358,12 @@
                     <h4
                         class="font-1 fw-bolder text-secondary-color-2 mb-4 justify-content-md-start justify-content-center align-items-center mt-md-0 mt-sm-4">
                         Find Us Here</h4>
-                    
-                        <iframe
-                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3928.8071276162077!2d76.33362927450885!3d10.03276897247111!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2bd58ff788f460b9%3A0xe92156e8d7a7226!2sMiracle%20Minds!5e0!3m2!1sen!2sin!4v1752154588351!5m2!1sen!2sin"
-                            width="100%" height="200px" style="border:0; border-radius:10px;"  allowfullscreen="" loading="lazy"
-                            referrerpolicy="no-referrer-when-downgrade"></iframe>
-                    
+
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3928.8071276162077!2d76.33362927450885!3d10.03276897247111!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2bd58ff788f460b9%3A0xe92156e8d7a7226!2sMiracle%20Minds!5e0!3m2!1sen!2sin!4v1752154588351!5m2!1sen!2sin"
+                        width="100%" height="200px" style="border:0; border-radius:10px;" allowfullscreen=""
+                        loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
 
                 </div>
             </div>
