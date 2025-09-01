@@ -1,40 +1,12 @@
-/*------------------------------------------------------------------
-[Table of contents]
 
-1. Import libraries
-2. Custom properties
-3. General Styles
-4. Typography
-5. Header and Navbar
-6. Buttons and Links
-7. Utilities
-8. Sections
-9. Swiper
-10.Boxes and Cards
-11.Footer
-12.Accordion
-13.Error 404
-14.Responsive Layouts
-
--------------------------------------------------------------------*/
-
-/* ---------------------------- */
-
-/* Import libraries             */
-
-/* ---------------------------- */
 
 @import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap');
 @import url('../css/vendor/bootstrap.min.css');
-/* ---------------------------- */
 
-/* Custom properties            */
-
-/* ---------------------------- */
 
 :root {
-    --primary-color: #1194C8;
+    --primary-color: #3b67bf;
     --secondary-color: #57C390;
     --text-color: #191919;
     --text-color-2: #7A7A7A;
@@ -49,29 +21,32 @@
     --dark-blue: #3b67bf;
 }
 
-.baby-pink{
+.baby-pink {
     color: var(--baby-pink);
 }
-.baby-pink-bg{
+
+.baby-pink-bg {
     background-color: var(--baby-pink);
 }
 
-.dark-purple-bg{
+.dark-purple-bg {
     background-color: var(--dark-purple);
 }
 
-.dark-blue-bg{
+.dark-blue-bg {
     background-color: var(--dark-blue);
 }
 
-.bg-gradient-new-45{
-        background: linear-gradient(45deg, #8daef0, #3ab067);
+.bg-gradient-new-45 {
+    background: linear-gradient(45deg, #8daef0, #3ab067);
 
 }
-.bg-gradient-new-0{
-        background: linear-gradient(0deg, #8daef0, #3ab067);
+
+.bg-gradient-new-0 {
+    background: linear-gradient(0deg, #8daef0, #3ab067);
 
 }
+
 /* ---------------------------- */
 
 /* General Styles               */
@@ -1036,6 +1011,59 @@ img {
 }
 
 
+
+
+.hero-slider-container {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    transition: height 0.5s ease;
+    /* smooth height resize */
+}
+
+.hero-slide-item {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+    pointer-events: none;
+    /* avoid clicks on hidden slides */
+}
+
+.hero-slide-item.active {
+    opacity: 1;
+    position: relative;
+    /* take space for height measurement */
+    pointer-events: auto;
+}
+
+
+
+
+
 .h-100 {
     height: 100%;
+}
+
+.team-row {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer-links{
+    display: flex;
+    /* align-items: center; */
+    justify-content: space-between;
+}
+
+.footer-links p{
+    width: max-content;
+}
+
+.footer-links a{
+    color: #fff;
+    text-decoration: none;
 }

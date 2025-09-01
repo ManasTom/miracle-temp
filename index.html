@@ -183,9 +183,8 @@
                                 </p>
                                 <div
                                     class="d-flex gap-3 align-items-center my-4 flex-nowrap justify-content-lg-start justify-content-center">
-                                    <a href="#contact_sec" role="button" class="btn btn-primary-solid">Start A
-                                        Checkup
-                                        Now</a>
+                                    <a href="#contact_sec" role="button" class="btn btn-primary-solid">Get
+                                        Appointment</a>
                                     <button class="btn btn-secondary-solid rounded-circle fs-2 p-2 btn-play"
                                         type="button" style="width: 60px; height: 60px;" onclick="showVideoOverlay()">
                                         <i class="bi bi-play-fill"></i>
@@ -233,68 +232,13 @@
             </button>
             <div class="video-box">
                 <div class="ratio ratio-16x9">
-                    <iframe id="youtubeFrame" src="https://www.youtube.com/"
-                        title="YouTube video" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                    <iframe id="youtubeFrame" src="https://www.youtube.com/" title="YouTube video"
+                        allow="autoplay; encrypted-media" allowfullscreen></iframe>
                 </div>
             </div>
         </div>
         <!-- #video end -->
 
-        <style>
-            .hero-slider-container {
-                position: relative;
-                width: 100%;
-                overflow: hidden;
-                transition: height 0.5s ease;
-                /* smooth height resize */
-            }
-
-            .hero-slide-item {
-                position: absolute;
-                top: 0;
-                left: 0;
-                width: 100%;
-                opacity: 0;
-                transition: opacity 1s ease-in-out;
-                pointer-events: none;
-                /* avoid clicks on hidden slides */
-            }
-
-            .hero-slide-item.active {
-                opacity: 1;
-                position: relative;
-                /* take space for height measurement */
-                pointer-events: auto;
-            }
-        </style>
-
-        <script>
-            document.addEventListener("DOMContentLoaded", () => {
-                const container = document.querySelector(".hero-slider-container");
-                const slides = document.querySelectorAll(".hero-slide-item");
-                let current = 0;
-
-                function showSlide(index) {
-                    slides.forEach((slide, i) => {
-                        slide.classList.remove("active");
-                        slide.style.position = "absolute"; // keep others stacked
-                    });
-                    slides[index].classList.add("active");
-                    slides[index].style.position = "relative"; // let active one decide height
-
-                    // adjust container height to match active slide
-                    container.style.height = slides[index].scrollHeight + "px";
-                }
-
-                // Init
-                showSlide(current);
-
-                setInterval(() => {
-                    current = (current + 1) % slides.length;
-                    showSlide(current);
-                }, 6000);
-            });
-        </script>
 
         <!-- #hero end -->
 
@@ -341,7 +285,7 @@
                         data-aos-duration="1000">
                         <div class="bg-primary-color text-white p-4 rounded-5 h-100 transition-hover">
                             <div class="d-flex align-items-center gap-3 mb-3 justify-content-start">
-                                <div class="d-flex align-items-center justify-content-center dark-blue-bg rounded-circle"
+                                <div class="d-flex align-items-center justify-content-center bg-primary-color-2 rounded-circle"
                                     style="width: 50px; height: 50px;">
                                     <i class="bi bi-headset fs-4"></i>
                                 </div>
@@ -360,9 +304,10 @@
                                     style="width: 50px; height: 50px;">
                                     <i class="bi bi-tools fs-4"></i>
                                 </div>
-                                <h6 class="fw-bold mb-2" style="font-size: large;">Interactive<br>Self-Care Tools</h6>
+                                <h6 class="fw-bold mb-2" style="font-size: large;">Interactive<br>Self-Care Techniques
+                                </h6>
                             </div>
-                            <p class="mt-5">Empower yourself with our easy-to-use digital tools designed to help you
+                            <p class="mt-5">Empower yourself with techniques designed to help you
                                 build healthy habits and strengthen your well-being.</p>
                         </div>
                     </div>
@@ -869,25 +814,26 @@
             <div class="b-container">
                 <div class="row text-center">
                     <h6 class="text-primary-color fw-semibold mb-2">OUR SPECIALIST</h6>
-                    <h2 class="font-1 mb-5" style="font-weight: 800;">Meet Our Senior<br>Therapist</h2>
+                    <h2 class="font-1 mb-5" style="font-weight: 800;">Meet Our Therapists</h2>
                 </div>
-                <div class="row row-cols-1 row-cols-md-2 row-cols-xl-4 g-4 mb-5">
+                <div class="row row-cols-1 row-cols-md-2 row-cols-xl-4 g-4 mb-5 team-row">
                     <!-- Card 1 -->
                     <div class="col" data-aos="fade-right" data-aos-easing="linear" data-aos-delay="500"
                         data-aos-duration="1000">
                         <div class="position-relative rounded-5 transition-hover mx-auto img-container">
                             <div class="ratio-wrapper-419">
-                                <img src="image/positive-talking-middle-aged-business-woman-lookin-2024-12-08-01-17-09-utc.jpg"
-                                    alt="Ubeid Una" class="rounded-5 w-100 h-100 position-absolute">
+                                <img src="image/job-jacob.png" alt="Ubeid Una"
+                                    class="rounded-5 w-100 h-100 position-absolute">
                             </div>
-                            <div class="position-absolute w-75" style="margin-top: -9rem; margin-left: 12%;">
+                            <div class="position-absolute w-75"
+                                style="margin-top: -9rem; margin-left: 12%;     bottom: 0;">
                                 <div
                                     class="bg-primary-color d-flex flex-column text-white py-3 align-items-center text-center rounded-5">
                                     <div class="mb-2">
-                                        <h4 class="font-1 fw-bolder">Jhon Doe</h4>
-                                        <p class="mb-0">Psychologist</p>
+                                        <h4 class="font-1 fw-bolder">Job Jacob</h4>
+                                        <p class="mb-0">Founder</p>
                                     </div>
-                                    <div class="social-box justify-content-center mb-2">
+                                    <!-- <div class="social-box justify-content-center mb-2">
                                         <a href="https://www.facebook.com" class="fs-6 rounded-1 py-1"
                                             style="width: 30px; height: 30px;"><i
                                                 class="bi bi-facebook text-white"></i></a>
@@ -897,7 +843,7 @@
                                         <a href="https://www.linkedin.com" class="fs-6 rounded-1 py-1"
                                             style="width: 30px; height: 30px;"><i
                                                 class="bi bi-linkedin text-white"></i></a>
-                                    </div>
+                                    </div> -->
                                 </div>
                             </div>
                         </div>
@@ -907,17 +853,18 @@
                         data-aos-duration="1000">
                         <div class="position-relative rounded-5 transition-hover mx-auto  img-container">
                             <div class="ratio-wrapper-419">
-                                <img src="image/portrait-of-business-woman-in-glasses-white-shirt-2024-12-08-04-48-04-utc.jpg"
-                                    alt="Hafsha Jasmine" class="rounded-5 w-100 h-100 position-absolute">
+                                <img src="image/asha-job.png" alt="Hafsha Jasmine"
+                                    class="rounded-5 w-100 h-100 position-absolute">
                             </div>
-                            <div class="position-absolute w-75" style="margin-top: -9rem; margin-left: 12%;">
+                            <div class="position-absolute w-75"
+                                style="margin-top: -9rem; margin-left: 12%;     bottom: 0;">
                                 <div
                                     class="bg-primary-color d-flex flex-column text-white py-3 align-items-center text-center rounded-5">
                                     <div class="mb-2">
-                                        <h4 class="font-1 fw-bolder">Jhon Doe</h4>
-                                        <p class="mb-0">Psychologist</p>
+                                        <h4 class="font-1 fw-bolder">Asha Job</h4>
+                                        <p class="mb-0">Senior Psychotherapist</p>
                                     </div>
-                                    <div class="social-box justify-content-center mb-2">
+                                    <!-- <div class="social-box justify-content-center mb-2">
                                         <a href="https://www.facebook.com" class="fs-6 rounded-1 py-1"
                                             style="width: 30px; height: 30px;"><i
                                                 class="bi bi-facebook text-white"></i></a>
@@ -927,71 +874,12 @@
                                         <a href="https://www.linkedin.com" class="fs-6 rounded-1 py-1"
                                             style="width: 30px; height: 30px;"><i
                                                 class="bi bi-linkedin text-white"></i></a>
-                                    </div>
+                                    </div> -->
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <!-- Card 3 -->
-                    <div class="col" data-aos="fade-down" data-aos-easing="linear" data-aos-delay="500"
-                        data-aos-duration="1000">
-                        <div class="position-relative rounded-5 transition-hover mx-auto img-container">
-                            <div class="ratio-wrapper-419">
-                                <img src="image/young-businesswoman-with-business-notebook-looking-2024-12-08-04-08-10-utc.jpg"
-                                    alt="Farina Amira" class="rounded-5 w-100 h-100 position-absolute">
-                            </div>
-                            <div class="position-absolute w-75" style="margin-top: -9rem; margin-left: 12%;">
-                                <div
-                                    class="bg-primary-color d-flex flex-column text-white py-3 align-items-center text-center rounded-5">
-                                    <div class="mb-2">
-                                        <h4 class="font-1 fw-bolder">Jhon Doe</h4>
-                                        <p class="mb-0">Psychologist</p>
-                                    </div>
-                                    <div class="social-box justify-content-center mb-2">
-                                        <a href="https://www.facebook.com" class="fs-6 rounded-1 py-1"
-                                            style="width: 30px; height: 30px;"><i
-                                                class="bi bi-facebook text-white"></i></a>
-                                        <a href="https://x.com" class="fs-6 rounded-1 py-1"
-                                            style="width: 30px; height: 30px;"><i
-                                                class="bi bi-twitter-x text-white"></i></a>
-                                        <a href="https://www.linkedin.com" class="fs-6 rounded-1 py-1"
-                                            style="width: 30px; height: 30px;"><i
-                                                class="bi bi-linkedin text-white"></i></a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Card 4 -->
-                    <div class="col" data-aos="fade-left" data-aos-easing="linear" data-aos-delay="500"
-                        data-aos-duration="1000">
-                        <div class="position-relative rounded-5 transition-hover mx-auto img-container">
-                            <div class="ratio-wrapper-419">
-                                <img src="image/joyful-woman-with-smartphone-resting-on-couch-at-h.jpg"
-                                    alt="Idayati Ilyas" class="rounded-5 w-100 h-100 position-absolute">
-                            </div>
-                            <div class="position-absolute w-75" style="margin-top: -9rem; margin-left: 12%;">
-                                <div
-                                    class="bg-primary-color d-flex flex-column text-white py-3 align-items-center text-center rounded-5">
-                                    <div class="mb-2">
-                                        <h4 class="font-1 fw-bolder">Jhon Doe</h4>
-                                        <p class="mb-0">Psychologist</p>
-                                    </div>
-                                    <div class="social-box justify-content-center mb-2">
-                                        <a href="https://www.facebook.com" class="fs-6 rounded-1 py-1"
-                                            style="width: 30px; height: 30px;"><i
-                                                class="bi bi-facebook text-white"></i></a>
-                                        <a href="https://x.com" class="fs-6 rounded-1 py-1"
-                                            style="width: 30px; height: 30px;"><i
-                                                class="bi bi-twitter-x text-white"></i></a>
-                                        <a href="https://www.linkedin.com" class="fs-6 rounded-1 py-1"
-                                            style="width: 30px; height: 30px;"><i
-                                                class="bi bi-linkedin text-white"></i></a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+
                 </div>
             </div>
         </section>
@@ -1138,7 +1026,7 @@
                                             </div>
                                             <div class="ms-2 font-1 py-2">
                                                 <p class="fw-bold text-primary-color mb-0">Call us anytime</p>
-                                                <h5 class="fw-bold">(555) 123-4567</h5>
+                                                <h5 class="fw-bold">+91 7676900400</h5>
                                             </div>
                                         </div>
                                         <div class="d-flex align-items-center gap-3 justify-content-start mt-3"
@@ -1150,7 +1038,7 @@
                                             </div>
                                             <div class="ms-2 font-1 py-2">
                                                 <p class="fw-bold text-primary-color mb-0">Email us</p>
-                                                <h5 class="fw-bold">Info@Yourmail.Com</h5>
+                                                <h5 class="fw-bold">admin@miracle-minds.com</h5>
                                             </div>
                                         </div>
                                         <div class="d-flex align-items-center gap-3 justify-content-start"
@@ -1303,17 +1191,17 @@
                 <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-3">
                     <h4 class="text-secondary-color-2 mb-4">Contact</h4>
                     <p>Silver Oak Building, Seaport - Airport Rd, Thrikkakara, Kochi, Kerala 682021</p>
-                    <p>Info@yourmail.com</p>
-                    <p>(555) 123-4567</p>
+                    <p>admin@miracle-minds.com</p>
+                    <p>+91 7676900400</p>
                 </div>
                 <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-3">
                     <h4 class="text-secondary-color-2 mb-4">Quick Links</h4>
                     <ul class="d-flex flex-column p-0">
                         <li class="mb-2"><a href="index.html" class="links-secondary">Home</a></li>
-                        <li class="mb-2"><a href="services.html" class="links-secondary">Services</a></li>
-                        <li class="mb-2"><a href="appointment.html" class="links-secondary">Appointment</a></li>
-                        <li class="mb-2"><a href="blogs.html" class="links-secondary">Blogs</a></li>
-                        <li class="mb-2"><a href="faqs.html" class="links-secondary">FAQs</a></li>
+                        <li class="mb-2"><a href="#about_sec" class="links-secondary">About Us</a></li>
+                        <li class="mb-2"><a href="#services_sec" class="links-secondary">Services</a></li>
+                        <li class="mb-2"><a href="#" class="links-secondary">Blogs</a></li>
+                        <li class="mb-2"><a href="#contact_sec" class="links-secondary">Contact Us</a></li>
                     </ul>
                 </div>
                 <div class="col-12 col-md-4 col-lg-3 mb-3 text-md-start text-center">
@@ -1329,8 +1217,10 @@
 
                 </div>
             </div>
-            <div class="row justify-content-center py-4 mt-4 border-top">
-                <p class="text-center w-100 mb-0">Copyright &copy; 2025 MiracleMinds. All Rights Reserved.</p>
+            <div class="row  py-4 mt-4 border-top footer-links">
+                <p class=" mb-0">Copyright &copy; 2025 MiracleMinds. All Rights Reserved.</p>
+                <p><a href="terms-and-conditions.html">Terms and Conditions</a></p>
+                <p><a href="privacy-policy.html">Terms and Conditions</a></p>
             </div>
         </div>
     </footer>
