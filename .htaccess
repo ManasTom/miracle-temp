@@ -33,8 +33,8 @@ RewriteRule ^(.*)$ https://%1/$1 [R=301,L]
 # RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [R=301,L]
 
 # Custom error documents (optional, uncomment and update paths if needed)
-# ErrorDocument 404 /404.html
-# ErrorDocument 403 /403.html
+ErrorDocument 404 /404.html
+ErrorDocument 403 /403.html
 
 # Set default charset
 AddDefaultCharset UTF-8
