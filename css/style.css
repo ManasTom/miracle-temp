@@ -206,10 +206,14 @@ img {
 }
 
 .social-box a {
-    background-color: var(--dark-purple);
+    background-color: #fff;
     text-align: center;
     vertical-align: middle;
     transition: all 0.3s ease-in-out;
+}
+
+.social-box i {
+    color: #000;
 }
 
 .social-box a:hover {
@@ -516,11 +520,80 @@ img {
 }
 
 .hero-section {
-    background-image: url('../image/Homehero1.webp');
+    /* background-image: url('../image/Homehero1.webp'); */
     background-size: cover;
     background-position: center;
     padding-bottom: 80px;
 }
+
+.hero-section1 {
+    /* background-image: url('../image/rappot-building.jpg'); */
+    background:
+        linear-gradient(90deg, #55ccb27e, #f2bbc584),
+        url('../image/rappot-building.jpg');
+    background-size: cover;
+    background-position: center;
+    padding-bottom: 80px;
+}
+
+
+.hero-section2 {
+    /* background-image: url('../image/listener.jpg'); */
+    background:
+        linear-gradient(90deg, #55ccb27e, #f2bbc584),
+        url('../image/listener.jpg');
+    background-size: cover;
+    background-position: center;
+    padding-bottom: 80px;
+
+
+}
+
+
+.hero-section3 {
+    /* background-image: url('../image/corporate-training.jpg'); */
+    background:
+        linear-gradient(90deg, #55ccb27e, #f2bbc584),
+        url('../image/corporate-training.jpg');
+    background-size: cover;
+    background-position: center;
+    padding-bottom: 80px;
+}
+
+
+.hero-section4 {
+    /* background-image: url('../image/corporate-training.jpg'); */
+    background:
+        linear-gradient(90deg, #ffffffac, #f2bbc56d),
+        url('../image/dmit.jpg');
+    background-size: cover;
+    background-position: center;
+    padding-bottom: 80px;
+}
+
+
+.hero-section5 {
+    /* background-image: url('../image/personal-counselling.jpg'); */
+    background:
+        linear-gradient(90deg, #55ccb27e, #f2bbc584),
+        url('../image/personal-counselling.jpg');
+    background-size: cover;
+    background-position: center;
+    padding-bottom: 80px;
+}
+
+
+.hero-section6 {
+    /* background-image: url('../image/online-consultation.jpg'); */
+    background:
+        linear-gradient(90deg, #55ccb27e, #f2bbc584),
+        url('../image/online-consultation.jpg');
+    background-size: cover;
+    background-position: center;
+    padding-bottom: 80px;
+}
+
+
 
 /* ---------------------------- */
 
@@ -1298,5 +1371,9 @@ img {
 @media only screen and (max-width: 768px) {
     .bdr {
         border-right: 0px solid #000;
+    }
+
+    .hero-section h1 {
+font-size: 30px;
     }
 }
