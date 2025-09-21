@@ -524,13 +524,14 @@ img {
     background-size: cover;
     background-position: center;
     padding-bottom: 80px;
+    height: 737px;
 }
 
 .hero-section1 {
     /* background-image: url('../image/rappot-building.jpg'); */
     background:
         linear-gradient(90deg, #55ccb27e, #f2bbc584),
-        url('../image/rappot-building.jpg');
+        url('../image/rappot-building.webp');
     background-size: cover;
     background-position: center;
     padding-bottom: 80px;
@@ -541,7 +542,7 @@ img {
     /* background-image: url('../image/listener.jpg'); */
     background:
         linear-gradient(90deg, #55ccb27e, #f2bbc584),
-        url('../image/listener.jpg');
+        url('../image/listener.webp');
     background-size: cover;
     background-position: center;
     padding-bottom: 80px;
@@ -554,7 +555,7 @@ img {
     /* background-image: url('../image/corporate-training.jpg'); */
     background:
         linear-gradient(90deg, #55ccb27e, #f2bbc584),
-        url('../image/corporate-training.jpg');
+        url('../image/corporate-training.webp');
     background-size: cover;
     background-position: center;
     padding-bottom: 80px;
@@ -565,7 +566,7 @@ img {
     /* background-image: url('../image/corporate-training.jpg'); */
     background:
         linear-gradient(90deg, #ffffffac, #f2bbc56d),
-        url('../image/dmit.jpg');
+        url('../image/dmit.webp');
     background-size: cover;
     background-position: center;
     padding-bottom: 80px;
@@ -576,7 +577,7 @@ img {
     /* background-image: url('../image/personal-counselling.jpg'); */
     background:
         linear-gradient(90deg, #55ccb27e, #f2bbc584),
-        url('../image/personal-counselling.jpg');
+        url('../image/personal-counselling.webp');
     background-size: cover;
     background-position: center;
     padding-bottom: 80px;
@@ -587,7 +588,7 @@ img {
     /* background-image: url('../image/online-consultation.jpg'); */
     background:
         linear-gradient(90deg, #55ccb27e, #f2bbc584),
-        url('../image/online-consultation.jpg');
+        url('../image/online-consultation.webp');
     background-size: cover;
     background-position: center;
     padding-bottom: 80px;
@@ -1374,6 +1375,10 @@ img {
     }
 
     .hero-section h1 {
-font-size: 30px;
+        font-size: 30px;
+    }
+
+    .hero-section {
+        height: 530px;
     }
 }
