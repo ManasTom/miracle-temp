@@ -399,7 +399,8 @@
 
                                 <hr class="border border-white border-2 opacity-75 w-75 my-4 mx-auto mx-lg-0">
                                 <p class="fs-5 my-4">
-                                    Guiding you towards clarity, confidence, and emotional balance through compassionate counselling.
+                                    Guiding you towards clarity, confidence, and emotional balance through compassionate
+                                    counselling.
                                 </p>
                                 <div
                                     class="d-flex gap-3 align-items-center my-4 flex-nowrap justify-content-lg-start justify-content-center">
@@ -1098,7 +1099,7 @@
                 <div class="row justify-content-center text-center text-xl-start my-5">
                     <div class="col-12 col-xl-7">
                         <h6 class="text-primary-color fw-bold mb-2">HOW WE WORK?</h6>
-                        <h2 class="font-1 mb-4" style="font-weight: 800;">
+                        <h2 class="font-1 mb-1" style="font-weight: 800;">
                             Here For Your <span class="text-primary-color">Health</span>,<br>
                             <span class="text-primary-color">Here</span> For Your Heart
                         </h2>
@@ -1251,7 +1252,8 @@
                             Raising <span class="text-primary-color">Hope</span>,<br> Step <span
                                 class="text-primary-color">By Step</span>
                         </h2>
-                        <p class="mb-4" style="font-size: large;">Through consistent care and compassionate guidance, we
+                        <p class="mb-4 text-justify" style="font-size: large;">Through consistent care and compassionate
+                            guidance, we
                             help individuals rediscover strength, build resilience, and move forward toward a brighter,
                             healthier future at their own pace.</p>
                         <ul class="list-unstyled font-1 text-start text-xl-start">
@@ -1347,7 +1349,10 @@
                                         <i class="bi bi-star-fill"></i>
                                     </div>
                                 </div>
-                                <p class="fw-bold">"Asha mam is very kind and supportive, she make me feel very comfortable from first session itself. I was not sure to go for counselling but after meeting her I feel confident. She guide me in personal matters as well as family issues. Miracle Minds is lucky to have such a doctor."</p>
+                                <p class="fw-bold">"Asha mam is very kind and supportive, she make me feel very
+                                    comfortable from first session itself. I was not sure to go for counselling but
+                                    after meeting her I feel confident. She guide me in personal matters as well as
+                                    family issues. Miracle Minds is lucky to have such a doctor."</p>
                                 <div class="d-flex align-items-center mt-2">
                                     <img src="image/user.png" alt="Client 1" class="rounded-circle me-3"
                                         style="width: 64px; height: 64px;">
@@ -1370,7 +1375,10 @@
                                         <i class="bi bi-star-fill"></i>
                                     </div>
                                 </div>
-                                <p class="fw-bold">"The new clinic of Miracle Minds is very nice and peaceful place. When we enter inside we can feel some positive energy and calm vibes. Waiting area is clean and staffs are friendly. It dont feel like hospital, more like homely feeling. Good place for mental health support."</p>
+                                <p class="fw-bold">"The new clinic of Miracle Minds is very nice and peaceful place.
+                                    When we enter inside we can feel some positive energy and calm vibes. Waiting area
+                                    is clean and staffs are friendly. It dont feel like hospital, more like homely
+                                    feeling. Good place for mental health support."</p>
                                 <div class="d-flex align-items-center mt-2">
                                     <img src="image/user.png" alt="Client 2" class="rounded-circle me-3"
                                         style="width: 64px; height: 64px;">
@@ -1393,7 +1401,10 @@
                                         <i class="bi bi-star-fill"></i>
                                     </div>
                                 </div>
-                                <p class="fw-bold">"Really good experience with Miracle Minds, both Job sir and Asha mam are very experienced. They listen with patience and give practical solutions. The place also very calm and full positive energy. I will recommend this clinic to anyone who need counselling or therapy."</p>
+                                <p class="fw-bold">"Really good experience with Miracle Minds, both Job sir and Asha mam
+                                    are very experienced. They listen with patience and give practical solutions. The
+                                    place also very calm and full positive energy. I will recommend this clinic to
+                                    anyone who need counselling or therapy."</p>
                                 <div class="d-flex align-items-center mt-2">
                                     <img src="image/user.png" alt="Client 3" class="rounded-circle me-3"
                                         style="width: 64px; height: 64px;">
@@ -1416,7 +1427,10 @@
                                         <i class="bi bi-star-fill"></i>
                                     </div>
                                 </div>
-                                <p class="fw-bold">"Miracle Minds is doing great work, I went there for psychotherapy session. They are providing counselling for kids, personal and also corporate. Very professional approach and also caring nature. I can see lot of improvement in my child after regular visit. Thanks to the team."</p>
+                                <p class="fw-bold">"Miracle Minds is doing great work, I went there for psychotherapy
+                                    session. They are providing counselling for kids, personal and also corporate. Very
+                                    professional approach and also caring nature. I can see lot of improvement in my
+                                    child after regular visit. Thanks to the team."</p>
                                 <div class="d-flex align-items-center mt-2">
                                     <img src="image/user.png" alt="Client 4" class="rounded-circle me-3"
                                         style="width: 64px; height: 64px;">
@@ -1864,6 +1878,41 @@
         </a>
         <p class="text_icon">Talk to us?</p>
     </div>
+
+
+    <script>
+        document.querySelectorAll('.offcanvas a.nav-link').forEach(function (link) {
+            link.addEventListener('click', function (e) {
+                const targetId = this.getAttribute('href');
+
+                if (targetId.startsWith('#')) {
+                    e.preventDefault(); // stop default jump
+
+                    // Store the target
+                    const target = document.querySelector(targetId);
+
+                    // Get the offcanvas instance
+                    let offcanvas = document.querySelector('.offcanvas.show');
+                    if (offcanvas) {
+                        let offcanvasInstance = bootstrap.Offcanvas.getInstance(offcanvas);
+
+                        // After the offcanvas is hidden, scroll to target
+                        offcanvas.addEventListener('hidden.bs.offcanvas', function handler() {
+                            if (target) {
+                                target.scrollIntoView({ behavior: 'smooth' });
+                            }
+                            // remove listener to avoid multiple triggers
+                            offcanvas.removeEventListener('hidden.bs.offcanvas', handler);
+                        });
+
+                        // Hide the menu
+                        offcanvasInstance.hide();
+                    }
+                }
+            });
+        });
+    </script>
+
 
     <!-- Scripts -->
     <!-- jQuery -->
