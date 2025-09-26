@@ -1090,6 +1090,7 @@ img {
     width: 100%;
     overflow: hidden;
     transition: height 0.5s ease;
+    margin-top: 80px;
     /* smooth height resize */
 }
 
@@ -1111,6 +1112,34 @@ img {
     pointer-events: auto;
 }
 
+
+
+.hero-slider-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(0, 0, 0, 0.5);
+    border: none;
+    color: #fff;
+    font-size: 2rem;
+    padding: 10px 15px;
+    cursor: pointer;
+    z-index: 10;
+    border-radius: 50%;
+    transition: background 0.3s ease;
+}
+
+.hero-slider-btn:hover {
+    background: rgba(0, 0, 0, 0.8);
+}
+
+.hero-slider-btn.prev {
+    left: 15px;
+}
+
+.hero-slider-btn.next {
+    right: 15px;
+}
 
 
 
@@ -1381,4 +1410,16 @@ img {
     .hero-section {
         height: 530px;
     }
+}
+
+
+
+
+.header-sticky {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 9999;
+    box-shadow: 1px 1px 20px 0px #00000070;
 }
